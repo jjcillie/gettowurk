@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo *)",
+      "PowerShell(gh repo *)",
+      "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" checkout -b main)",
+      "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" branch -d master)",
+      "Bash(git -C 'C:/Users/jjcil/Projects/wurk' branch --show-current)",
+      "Bash(echo \"Branch: $\\(git -C 'C:/Users/jjcil/Projects/wurk' branch --show-current\\)\")",
+      "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" add CNAME)",
+      "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" commit -m \"Add CNAME for custom domain gettowurk.com\")",
+      "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" remote add origin https://github.com/jjcillie/gettowurk.git)",
+      "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" remote -v)"
+    ]
+  }
+}

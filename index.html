@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Wurk — Local Gig App</title>
   <meta name="description" content="Real neighbors doing real work. Find local help for yard work and car washing in North Charleston, SC." />
+  <meta property="og:title" content="Wurk — Local Gig App" />
+  <meta property="og:description" content="Real neighbors doing real work. Find local help for yard work and car washing in North Charleston, SC." />
+  <meta property="og:url" content="https://gettowurk.com" />
+  <meta property="og:type" content="website" />
+  <!-- og:image: add a 1200x630 share image here once you have one -->
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
@@ -213,6 +219,13 @@
       font-size: 0.8rem;
       color: var(--text-muted);
       animation: fadeUp 0.6s 0.4s ease both;
+    }
+
+    .hero-logo {
+      height: 72px;
+      width: auto;
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.6s ease both;
     }
 
     /* HOW IT WORKS */
@@ -442,6 +455,15 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
+    @media (max-width: 640px) {
+      nav { padding: 0.875rem 1.25rem; }
+      .section { padding: 3.5rem 1.25rem; }
+      .hero-buttons { flex-direction: column; align-items: stretch; }
+      .hero-buttons .btn { width: 100%; justify-content: center; }
+      .cta-card { padding: 2rem 1.5rem; }
+      .hero-logo { height: 56px; }
+    }
+
     /* DIVIDER */
     .divider {
       height: 1px;
@@ -460,6 +482,8 @@
 
   <!-- HERO -->
   <section class="hero">
+    <!-- Drop your logo file into this folder as logo.png (or logo.svg) and update src below -->
+    <img src="logo.png" alt="Wurk" class="hero-logo" onerror="this.style.display='none'">
     <div class="hero-badge">Now live in North Charleston, SC</div>
     <h1 class="hero-title">Your neighbors.<br><em>Your yard.</em><br>Done.</h1>
     <p class="hero-sub">Wurk connects homeowners with local teens and young adults for simple outdoor work. Affordable, transparent and hyper-local.</p>
@@ -569,7 +593,7 @@
   <footer>
     <div class="footer-logo">WURK</div>
     <p>North Charleston, SC &nbsp;·&nbsp; <a href="mailto:gettowurk@gmail.com">gettowurk@gmail.com</a></p>
-    <p style="margin-top: 0.5rem;">© 2025 Wurk. All rights reserved.</p>
+    <p style="margin-top: 0.5rem;">© 2026 Wurk. All rights reserved.</p>
   </footer>
 
 </body>
