@@ -10,7 +10,10 @@
       "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" add CNAME)",
       "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" commit -m \"Add CNAME for custom domain gettowurk.com\")",
       "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" remote add origin https://github.com/jjcillie/gettowurk.git)",
-      "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" remote -v)"
+      "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" remote -v)",
+      "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" add index.html apps-script.js)",
+      "Bash(git -C \"C:/Users/jjcil/Projects/wurk\" commit -m \"Add homeowner and worker forms with Google Sheets backend\")",
+      "Bash(git *)"
     ]
   }
 }
